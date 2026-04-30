@@ -1,0 +1,153 @@
+body{
+    font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+#main-conatainer{  
+
+  box-shadow: 12px 12px 122px 32px rgb(222, 217, 217) ;
+    width: 1000px;
+    margin-left: 300px;
+    border-radius: 20px;  
+}
+#GPA-Header{
+    display: flex;
+    justify-content: center;
+     margin: 12px;
+     font-size: 32px;
+     color: rgb(181, 7, 7);
+     font-weight: bold;
+}
+#student-ID-Name{
+    display: flex;
+    justify-content: space-around;
+     margin: 10px;
+     height: 50px;
+}
+#student-name{
+ border: 2px solid rgb(149, 155, 149);
+  width: 500px;
+  padding: 14px;
+  margin: 15px;
+  border-radius: 5px;
+}
+#student-id{
+ border: 2px solid rgb(149, 155, 149);
+ width: 500px;
+  padding: 14px;
+  margin: 15px;
+  border-radius: 5px;
+}
+#course-grade-credit{
+    display: flex;
+     margin: 12px;
+     justify-content: space-around;
+     gap:390px;
+     font-weight: bolder;
+}
+#course-container{
+    display: flex;
+     justify-content: space-between;
+     margin: 2px;
+    border-top: 1px solid #ccc;
+    padding: 10px; 
+    
+}
+  #general-container{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     margin: 2px;
+  }
+#sub-course-container-1{
+ 
+    padding:3px;
+    border: 2px solid rgb(215, 14, 14);
+     background-color: rgb(202, 26, 26);
+     width: 35px;
+     height:36px;
+     border-radius: 5px;
+     text-align: center;
+     color: white;
+     font-size: large;
+}
+#sub-course-container{
+    padding:3px;
+}
+#course-1{
+ border: 2px solid rgb(149, 155, 149);
+  width: 150px;
+  padding: 7px;
+  border-radius: 5px;
+  font-size: medium;
+}
+#grade-abc{
+   border: 2px solid rgb(149, 155, 149);
+   width: 150px;
+   padding: 7px;
+   border-radius: 5px;
+}
+#Credit{
+   border: 2px solid rgb(149, 155, 149);  
+   width: 150px;
+   padding: 7px;
+   border-radius: 5px;
+
+}
+#result-display-button{
+    display: flex;
+     justify-content: flex-start;
+     gap:32px;
+     margin: 12px;
+     height: 40px;
+     padding: 6px;
+      border-top: 1px solid #c4c2c2;
+}
+#addCourse-button{
+    background-color: #3882F6;
+    border-radius: 20px;
+    width:150px;
+    font-weight: bold;
+    border: 4px;
+    color:rgb(255, 255, 255);
+}
+#calculate-GPA-button{
+    background-color: rgb(245, 186, 47);
+    border-radius: 20px;
+    width:150px;
+    font-weight: bold;
+    border: 4px;
+}
+#export-PDF{
+    background-color: rgb(1, 177, 1);
+    border-radius: 20px;
+    width:150px;
+    font-weight: bold;
+    border: 4px;
+    color:rgb(255, 255, 255);
+}
+#total-result{
+    display: flex;
+    justify-content: space-between;
+     margin: 12px;
+     height: 50px;
+     font-weight: bold;
+      font-size: 17px;
+}
+#final-GPA{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(223, 226, 228);
+     border: 2px solid rgb(230, 235, 230);
+     margin: 12px;
+     height: 50px;
+     font-size: 20px;
+     border-radius: 20px;
+}
+#grade-scale{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(244, 248, 252);
+   padding: 25px;
+   margin: 22px;
+   border-radius: 20px;
+}
