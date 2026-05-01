@@ -2,6 +2,8 @@ const AddCourse = document.querySelector(".addCourse-button");
 const displayContainer = document.querySelector(".displayContainer");
 const finalGpa = document.querySelector(".final-GPA");
 const calculateBtn = document.querySelector(".calculate-GPA-button");
+const totalCreditPara =document.querySelector("#totalCreditPara");
+const totalPointPara =document.querySelector("#totalPointPara");
 
 
 AddCourse.addEventListener("click", () => {
@@ -71,7 +73,7 @@ calculateBtn.addEventListener("click", () => {
     const points = gradePoint[gradeValue] || 0;
     totalPoints += points * creditValue;
    if(gradeValue !=="F"){
-    totalCredits +=totalPoints;
+    totalCredits +=creditValue;
    }
   });
 let gpa;
@@ -82,5 +84,8 @@ else{
     gpa=0;
 }
   finalGpa.textContent = `Final GPA: ${gpa.toFixed(2)}`;
+  totalCreditPara.textContent = `Total Credits: ${totalCredits}`;
+  totalPointPara.textContent = `Total Points: ${totalPoints.toFixed(2)}`;
+  
 });
 
