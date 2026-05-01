@@ -25,4 +25,8 @@ A simple web-based GPA Calculator that allows students to input their courses, g
 
 ---
 
+## 📂 Project Structure
+├── index.html      # Main HTML file
+├── index.css       # Stylesheet
+└── index.js        # JavaScript logic
 
