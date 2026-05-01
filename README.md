@@ -63,3 +63,15 @@ A simple web-based GPA Calculator that allows students to input their courses, g
 | F     | 39–0    | 0.0 (excluded from credits) |
 
 ---
+
+## 📌 Future Improvements
+- Implement **Export PDF** functionality
+- Add **live GPA updates** (without clicking Calculate)
+- Improve UI with better styling and responsiveness
+- Store student data locally or in a database
+
+---
+
+## 🧑‍💻 Author
+Developed by **Tsarkan Desalegn**  
+GitHub: [Tsarkan-Desalegn](https://github.com/Tsarkan-Desalegn)
