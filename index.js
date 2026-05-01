@@ -30,5 +30,10 @@ AddCourse.addEventListener("click", () => {
   CourseDiv.style.justifyContent = "space-around";
   CourseDiv.style.margin = "10px 0";
 
+const deleteBtn = CourseDiv.querySelector(".delete");
+deleteBtn.addEventListener("click", ()=>{
+    CourseDiv.remove();
+})
+
   displayContainer.appendChild(CourseDiv);
 });
