@@ -30,3 +30,19 @@ A simple web-based GPA Calculator that allows students to input their courses, g
 ├── index.css       # Stylesheet
 └── index.js        # JavaScript logic
 
+---
+
+## ⚙️ How It Works
+1. Enter **Student Name** and **Student ID**.
+2. Click **+Add Course** to add a new row.
+3. Fill in:
+   - Course name
+   - Grade (A+ → F)
+   - Credit hours
+4. Click **Calculate GPA** to compute:
+   - Final GPA
+   - Total Credits
+   - Total Points
+5. Use **Export PDF** (future feature) to save results.
+
+---
