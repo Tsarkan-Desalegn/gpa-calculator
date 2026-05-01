@@ -19,29 +19,26 @@ height: 100vh;
      color: rgb(181, 7, 7);
      font-weight: bold;
 }
-#student-ID-Name{
-    display: flex;
-    justify-content: space-around;
-  
+#student-ID-Name {
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;              /* adds spacing between inputs */
+  flex-wrap: wrap;        /* allows inputs to wrap on smaller screens */
 }
-#student-name{
-width: 15rem;
-height: 2rem;
-border: 2px solid #a9acac;
-border-radius: 1rem;
-font-size: 1rem;
- font-family: cursive;
- background-color: hsl(220, 21%, 95%);
+
+#student-name,
+#student-id {
+  flex: 1;                /* makes both inputs share available space equally */
+  min-width: 200px;       /* ensures they don’t shrink too small */
+  height: 2rem;
+  border: 2px solid #a9acac;
+  border-radius: 1rem;
+  font-size: 1rem;
+  font-family: cursive;
+  background-color: hsl(220, 21%, 95%);
+  padding: 0 0.5rem;      /* adds some inner spacing */
 }
-#student-id{
-width: 15rem;
-height: 2rem;
-border: 2px solid #a9acac;
-border-radius: 1rem;
-font-size: 1rem;
- font-family: cursive;
- background-color: hsl(220, 21%, 95%);
-}
+
 #course-grade-credit{
     display: flex;
      justify-content: space-around;
@@ -50,15 +47,21 @@ font-size: 1rem;
 }
 
 
-#result-display-button{
-    display: flex;
-     justify-content: flex-start;
-     gap:32px;
-     margin: 12px;
-     height: 40px;
-     padding: 6px;
-     
+#result-display-button {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;          /* use relative gap instead of fixed px */
+  margin: 12px;
+  padding: 6px;
+  flex-wrap: wrap;    /* allows buttons to wrap on smaller screens */
 }
+
+#result-display-button button {
+  flex: 1;            /* each button shares available space equally */
+  min-width: 120px;   /* prevents buttons from shrinking too small */
+  height: 40px;
+}
+
 .delete{
     background-color: red;
     border: none;
@@ -111,11 +114,49 @@ font-size: 1rem;
     display: flex;
     flex-direction: column;
     background-color: rgb(244, 248, 252);
-   padding: 25px;
-   margin: 22px;
+   padding: 1rem;
    border-radius: 20px;
 }
 .courseInput{
     width: 10rem;
     height: 2rem ;
 }
+.course-row {
+  display: flex;
+  flex-wrap: wrap;          /* allows wrapping on smaller screens */
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;                /* consistent spacing between children */
+  margin: 10px 0;
+  padding: 0.5rem;
+  border: 1px solid #ddd;   /* optional: visual separation */
+  border-radius: 0.5rem;
+}
+
+.course-row .courseInput {
+  flex: 2;                  /* course name takes more space */
+  min-width: 180px;
+  height: 2rem;
+}
+
+.course-row .select {
+  flex: 1;                  /* grade dropdown */
+  min-width: 100px;
+  height: 2rem;
+}
+
+.course-row .credit {
+  flex: 1;                  /* credit input */
+  min-width: 80px;
+  height: 2rem;
+}
+
+.course-row .delete {
+  flex: 0;                  /* delete button stays fixed size */
+  height: 2rem;
+  background: crimson;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
