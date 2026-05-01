@@ -96,7 +96,7 @@ font-size: 1rem;
      font-weight: bold;
       font-size: 17px;
 }
-#final-GPA{
+.final-GPA{
     display: flex;
     justify-content: center;
     align-items: center;
