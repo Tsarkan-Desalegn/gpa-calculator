@@ -31,10 +31,14 @@ AddCourse.addEventListener("click", () => {
     <input class= "credit" type="number" placeholder="3">
   `;
 
-  CourseDiv.style.display = "flex";
-  CourseDiv.style.justifyContent = "space-around";
+ CourseDiv.style.display = "flex";
+  CourseDiv.style.flexWrap = "wrap";         
+  CourseDiv.style.justifyContent = "space-between";
+  CourseDiv.style.alignItems = "center";
+  CourseDiv.style.gap = "1rem";
   CourseDiv.style.margin = "10px 0";
 
+  
 const deleteBtn = CourseDiv.querySelector(".delete");
 deleteBtn.addEventListener("click", ()=>{
     CourseDiv.remove();
